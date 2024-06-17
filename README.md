@@ -1,1 +1,1 @@
-In this repo , I'll share my solution for codewars problems
+In this repo , I'll share my solutions for codewars problems
