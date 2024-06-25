@@ -14,5 +14,16 @@ time = 6.7---> litres = 3
 
 time = 11.8--> litres = 5*/
 int litres(double time) {
-    return 0;
+    // int litres=time*0.5;
+    // return litres;
+return time*0.5;
+
+}
+#include<iostream>
+using namespace std;
+int main (){
+    double time;
+    cin >> time;
+    cout<<litres(time);
+    
 }

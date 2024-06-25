@@ -11,14 +11,34 @@ Notes
 You may consider that there will not be any empty arrays/vectors.
 */
 #include <vector>
+#include<iostream>
 using namespace std;
 
 int min(vector<int> list){
-    
-    return list[0];
+    int minnum = list[0];
+    for (int i=0; i<list.size(); i++){
+        
+        if (list[i]<minnum){
+            minnum=list[i];
+        }
+    }
+    return minnum;
 }
 
 int max(vector<int> list){
+    int maxnum=list[0];
+     for (int i=0; i<list.size(); i++){
+        if (list[i]>maxnum){
+            maxnum=list[i];
+        }
+    }
+    return maxnum;
     
-    return list[0];
+
+}
+int main(){
+    //for Test
+std::cout<<min({9,3,8,7,-1})<<endl;
+
+std::cout<<max({9,3,8,7,-1,18})<<endl;
 }
