@@ -14,7 +14,15 @@ Examples
 "-7" --> -7
 */
 #include <string>
+#include <iostream>
+using namespace std;
 
 int string_to_number(const std::string& s) {
-  //your code here
+  int num =std::stoi(s);
+  return num  ;
+}
+int main(){
+  string str;
+  cin >> str;
+  cout<<string_to_number(str);
 }
