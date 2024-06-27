@@ -40,9 +40,9 @@ using namespace std;
 
 
 string sliceString(string str) {
-    if (str.length() <= 2) {
-        return "";
-    }
+    // if (str.length() <= 2) {
+    //     return "";
+    // }
     return str.substr(1, str.length() - 2);
 }
 
